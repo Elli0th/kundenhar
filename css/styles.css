@@ -10,7 +10,7 @@ a {
     text-decoration: none;
 }
 
-.company-name, .fa-user, .nav-link-text, .fa-address-card {
+.trending-title, .recommendation-title, .find-your-dream-destination-title {
     color: #27ae60;
 }
 
@@ -22,29 +22,46 @@ a {
     width: calc(100vw - 16px);
 }
 
+.fa-user, .fa-address-card, .nav-link-text, .company-name {
+    color: #000000;
+    font-weight: 900;
+}
 
-.nav-title, .trending-title, .recommendation-title {
-    grid-column: 1 / span 2;
+
+.header-container {
+    grid-column: span 6;
     grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: #27ae60;
+    width: calc(100vw - 10.0001px);
+}
+
+.nav-title {
     text-align: left;
     margin: 30px 0px 30px 40px;
-
 }
 
-.nav-link-1 {
-    grid-column: 5;
-    grid-row: 1;
-    text-align: center;
-    align-self: center;
-    font-size: 25px;
+.nav-links {
+    text-align: right;
+    margin-right: 30px;
 }
 
+.nav-link-1,
 .nav-link-2 {
-    grid-column: 6;
-    grid-row: 1;
-    text-align: center;
-    align-self: center;
-    font-size: 25px;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.nav-link-1:hover .fa-user,
+.nav-link-1:hover .fa-address-card,
+.nav-link-1:hover .nav-link-text,
+.nav-link-2:hover .fa-user,
+.nav-link-2:hover .fa-address-card,
+.nav-link-2:hover .nav-link-text {
+    color: white;
 }
 
 /* 
@@ -54,6 +71,8 @@ Trending section
 .trending-title {
     grid-column: 1 / span 2;
     grid-row: 2;
+    text-align: left;
+    margin: 30px 0px 30px 40px;
 }
 
 .trending-img-1 {
@@ -96,7 +115,7 @@ Trending section
     left: 50%;
     transform: translateX(-50%); /* Center the text horizontally */
     color: white;
-    font-size: 24px;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -105,8 +124,10 @@ Recommendation section
 */
 
 .recommendation-title {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
     grid-row: 4;
+    text-align: left;
+    margin: 30px 0px 30px 40px;
 }
 
 .recommendation-img-1 {
@@ -131,4 +152,29 @@ Recommendation section
     display: grid;
     position: relative;
     text-align: center;
+}
+
+/*
+How to find your dream destination
+*/
+
+.find-your-dream-destination-title {
+    grid-column: 1 / span 3;
+    grid-row: 6;
+    text-align: left;
+    margin: 30px 0px 30px 40px;
+}
+
+.find-your-dream-destination-p1 {
+    grid-column: 1 / span 3;
+    grid-row: 7;
+    margin: 0 30px 30px 40px;
+    color: #ffffff;
+}
+
+.find-your-dream-destination-p2 {
+    grid-column: span 3 / span 6;
+    grid-row: 7;
+    margin: 0 30px 30px 40px;
+    color: #ffffff;
 }
