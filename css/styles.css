@@ -14,7 +14,7 @@ a {
     color: #27ae60;
 }
 
-#wrapper {
+.wrapper {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: min-content; /* Set to auto for dynamic height based on content */
@@ -22,7 +22,7 @@ a {
     width: calc(100vw - 16px);
 }
 
-.fa-user, .fa-address-card, .nav-link-text, .company-name {
+.fa-user, .fa-address-card, .nav-link-text, .company-name, .fa-house {
     color: #000000;
     font-weight: 900;
 }
@@ -32,15 +32,20 @@ a {
     grid-column: span 6;
     grid-row: 1;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    background-color: #27ae60;
     width: calc(100vw - 10.0001px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Set a high z-index to ensure the header is on top of other elements */
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #27ae60;
 }
 
 .nav-title {
     text-align: left;
-    margin: 30px 0px 30px 40px;
+    margin: 15px 0px 15px 40px;
 }
 
 .nav-links {
@@ -51,8 +56,8 @@ a {
 .nav-link-1,
 .nav-link-2 {
     display: inline-block;
-    margin-right: 20px;
-    font-size: 20px;
+    margin-right: 16px;
+    font-size: 16px;
 }
 
 .nav-link-1:hover .fa-user,
@@ -69,10 +74,10 @@ Trending section
 */
 
 .trending-title {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
     grid-row: 2;
     text-align: left;
-    margin: 30px 0px 30px 40px;
+    margin: 90px 0px 20px 40px;
 }
 
 .trending-img-1 {
@@ -178,3 +183,51 @@ How to find your dream destination
     margin: 0 30px 30px 40px;
     color: #ffffff;
 }
+
+.footer {
+    grid-column: span 6;
+    justify-content: center;
+    text-align: center;
+    grid-row: 8;
+    color: #ffffff;
+    background-color: #27ae60;
+    padding: 25px 0 25px 0;
+}
+
+/*
+History page
+*/
+/* History page */
+.nav-links-history {
+    grid-column: span 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px; /* Adjust margin as needed */
+}
+
+.nav-link-3,
+.nav-title-history,
+.nav-link-4 {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link-3 {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.nav-link-4 {
+    text-align: right;
+    margin-right: 40px;
+}
+
+.nav-title-history {
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+
+
+
