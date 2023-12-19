@@ -18,7 +18,7 @@ p {
     color: #27ae60;
 }
 
-.wrapper {
+#wrapper-index, #wrapper-about, #wrapper-blog {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: min-content; /* Set to auto for dynamic height based on content */
@@ -71,6 +71,7 @@ p {
 .nav-link-2:hover .fa-address-card,
 .nav-link-2:hover .nav-link-text,
 .nav-link-3:hover .fa-user,
+.nav-link-3:hover .fa-address-card,
 .nav-link-4:hover .fa-house {
     color: white;
 }
@@ -106,7 +107,7 @@ Trending section
 
 .trending-img-3 {
     grid-column: span 4 / span 6;
-    grid-row: 3;
+    grid-row: 3;    
     display: grid;
     position: relative;
     text-align: center;
@@ -295,4 +296,189 @@ How to find your dream destination
 
 #footer-history {
     grid-row: 6;
+}
+
+/*
+Blog page
+*/
+
+.user-img-1 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    display: grid;
+    position: relative;
+    text-align: center;
+    margin: 90px 0 0px 0;
+}
+
+.user-img-2 {
+    grid-column: span 2 / span 4;
+    grid-row: 2;
+    display: grid;
+    position: relative;
+    text-align: center;
+    margin: 90px 0 0 0;
+}
+
+.user-img-3 {
+    grid-column: span 4 / span 6;
+    grid-row: 2;
+    display: grid;
+    position: relative;
+    text-align: center;
+    margin: 90px 0 0 0;
+}
+
+.user-pic-1 {
+    grid-column: span 2;
+    grid-row: 3;
+    display: flex;
+    background-color: #27ae60;
+    border: 5px #27ae60 solid;
+    border-radius: 8px;
+    margin: 25px 25px 25px 25px;
+}
+
+.user-pic-2 {
+    grid-column: span 2 / span 4;
+    grid-row: 3;
+    display: flex;
+    background-color: #27ae60;
+    border: 5px #27ae60 solid;
+    border-radius: 8px;
+    margin: 25px 25px 25px 25px;
+}
+
+.user-pic-3 {
+    grid-column: span 4 / span 6;
+    grid-row: 3;
+    display: flex;
+    background-color: #27ae60;
+    border: 5px #27ae60 solid;
+    border-radius: 8px;
+    margin: 25px 25px 25px 25px;
+}
+
+.user-img-4 {
+    grid-column: span 2;
+    grid-row: 4;
+    display: grid;
+    position: relative;
+    text-align: center;
+}
+
+.user-img-5 {
+    grid-column: span 2 / span 4;
+    grid-row: 4;
+    display: grid;
+    position: relative;
+    text-align: center;
+}
+
+.user-img-6 {
+    grid-column: span 4 / span 6;
+    grid-row: 4;
+    display: grid;
+    position: relative;
+    text-align: center;
+}
+
+.user-pic-4 {
+    grid-column: span 2;
+    grid-row: 5;
+    display: flex;
+    background-color: #27ae60;
+    border: 5px #27ae60 solid;
+    border-radius: 8px;
+    margin: 25px 25px 25px 25px;
+}
+
+.user-pic-5 {
+    grid-column: span 2 / span 4;
+    grid-row: 5;
+    display: flex;
+    background-color: #27ae60;
+    border: 5px #27ae60 solid;
+    border-radius: 8px;
+    margin: 25px 25px 25px 25px;
+}
+
+.user-pic-6 {
+    grid-column: span 4 / span 6;
+    grid-row: 5;
+    display: flex;
+    background-color: #27ae60;
+    border: 5px #27ae60 solid;
+    border-radius: 8px;
+    margin: 25px 25px 25px 25px;
+}
+
+.user-img-7 {
+    grid-column: span 2;
+    grid-row: 6;
+    display: grid;
+    position: relative;
+    text-align: center;
+}
+
+.user-img-8 {
+    grid-column: span 2 / span 4;
+    grid-row: 6;
+    display: grid;
+    position: relative;
+    text-align: center;
+}
+
+.user-img-9 {
+    grid-column: span 4 / span 6;
+    grid-row: 6;
+    display: grid;
+    position: relative;
+    text-align: center;
+}
+
+.user-pic-7 {
+    grid-column: span 2;
+    grid-row: 7;
+    display: flex;
+    background-color: #27ae60;
+    border: 5px #27ae60 solid;
+    border-radius: 8px;
+    margin: 25px 25px 25px 25px;
+}
+
+.user-pic-8 {
+    grid-column: span 2 / span 4;
+    grid-row: 7;
+    display: flex;
+    background-color: #27ae60;
+    border: 5px #27ae60 solid;
+    border-radius: 8px;
+    margin: 25px 25px 25px 25px;
+}
+
+.user-pic-9 {
+    grid-column: span 4 / span 6;
+    grid-row: 7;
+    display: flex;
+    background-color: #27ae60;
+    border: 5px #27ae60 solid;
+    border-radius: 8px;
+    margin: 25px 25px 25px 25px;
+}
+
+#footer-blog {
+    grid-row: 8;
+}
+
+.profile-pic {
+    width: 40px;
+}
+
+.user-name {
+    display: flex;
+    align-self: center;
+    font-size: 1.4rem;
+    margin-left: 10px;
+    color: #000000;
 }
